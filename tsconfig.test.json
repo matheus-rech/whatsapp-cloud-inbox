@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    // Tests frequently have mock variables or inline fixtures that appear unused.
+    // Disable the unused checks only for test files to avoid false positives.
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
+  }
+}
